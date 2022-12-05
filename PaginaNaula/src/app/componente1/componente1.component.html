@@ -1,14 +1,9 @@
-<input [(ngModel)] = "numero" />
-<br />
+<h1>Sueldos</h1>
 
-<strong *ngIf="numero > 3">Numero mayor a 3</strong>
-<p *ngIf="numero == 3">Numero igual a 3</p>
-<strong *ngIf="numero < 3">Numero menor a 3</strong>
+<h1 *ngIf="num!=0">El numero es: {{num}}</h1>
 
-<tr *ngFor="let sueldo of sueldos">
-</tr>
-<ul *ngFor="let sueldo of sueldos">
-</ul>
+<input type="number" [(ngModel)]="num">
+<br><br>
 <div *ngFor="let sueldo of sueldos">
-    <div> Sueldo: {(sueldo)}</div>
+    <div> sueldo:{{sueldo}}</div>
 </div>

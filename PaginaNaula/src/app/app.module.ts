@@ -8,6 +8,7 @@ import { Componente2Component } from './componente2/componente2.component';
 import { Componente3Component } from './componente3/componente3.component';
 import { Componente4Component } from './componente4/componente4.component';
 import { Componente5Component } from './componente5/componente5.component';
+import { FormsModule } from '@angular/forms';
 import { Componente6Component } from './componente6/componente6.component';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { Componente6Component } from './componente6/componente6.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

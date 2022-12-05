@@ -1,1 +1,6 @@
-<p>componente1 works!</p>
+<input [(ngModel)] = "numero" />
+<br />
+
+<strong *ngIf="numero > 3">Numero mayor a 3</strong>
+<p *ngIf="numero == 3">Numero igual a 3</p>
+<strong *ngIf="numero < 3">Numero menor a 3</strong>

@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./componente1.component.css']
 })
 export class Componente1Component implements OnInit {
-  num:number=0;
-  sueldos=[1700, 1600, 1900, 1800, 2000, 4555]
+  num1:number=0;
+  num2:number=0;
+  num3:number=0;
+  num4:number=0;
+  num5:number=0;
   constructor() { }
 
   ngOnInit(): void {
@@ -15,8 +18,11 @@ export class Componente1Component implements OnInit {
   }
 
   almacenar(){
-    localStorage.setItem('valor_total', this.num.toString())
-    localStorage.setItem('mensaje', 'almacenado')
+    localStorage.setItem('nombre', this.num1.toString())
+    localStorage.setItem('mail', this.num2.toString())
+    localStorage.setItem('contraseña', this.num3.toString())
+    localStorage.setItem('contraseñaRep', this.num4.toString())
+    localStorage.setItem('telefono', this.num5.toString())
   }
 
 }

@@ -1,9 +1,11 @@
 <h1>Sueldos</h1>
 
-<h1 *ngIf="num!=0">El numero es: {{num}}</h1>
+<h1 *ngIf="num!=0">Numero es: {{num}}</h1>
 
-<input type="number" [(ngModel)]="num">
+<input [(ngModel)]="num">
 <br><br>
 <div *ngFor="let sueldo of sueldos">
     <div> sueldo:{{sueldo}}</div>
 </div>
+
+<button (click)="almacenar()">Enviar</button>

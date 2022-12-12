@@ -6,12 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./componente1.component.css']
 })
 export class Componente1Component implements OnInit {
-  num:number;
+  num:number=0;
   sueldos=[1700, 1600, 1900, 1800, 2000, 4555]
   constructor() { }
 
   ngOnInit(): void {
-    this.num=0;
+    localStorage.clear()
+  }
+
+  almacenar(){
+    localStorage.setItem('valor_total', this.num.toString())
+    localStorage.setItem('mensaje', 'almacenado')
   }
 
 }

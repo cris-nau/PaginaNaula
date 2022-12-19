@@ -6,7 +6,10 @@ import { Componente2Component } from './componente2/componente2.component';
 
 const routes: Routes = [
   {
-    path:'', component:Componente1Component
+    path:'', component: Componente1Component
+  },
+  {
+    path:'web2', component: Componente2Component
   }
 ];
 

@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Componente2Component implements OnInit {
   
-  resultado:any
-  mensaje:any
-  suma:number=0;
+  nombre:any
+  mail:any
+  contrasena:any
+  contrasenaRep:any
+  telefono:any
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,10 +20,10 @@ export class Componente2Component implements OnInit {
   }
 
   recup(){
-    this.resultado = localStorage.getItem('nombre')
-    this.resultado = localStorage.getItem('mail')
-    this.resultado = localStorage.getItem('contraseña')
-    this.resultado = localStorage.getItem('contraseñaRep')
-    this.resultado = localStorage.getItem('telefono')
+    this.nombre = localStorage.getItem('nombre')
+    this.mail = localStorage.getItem('mail')
+    this.contrasena = localStorage.getItem('contraseña')
+    this.contrasenaRep = localStorage.getItem('contraseñaRep')
+    this.telefono = localStorage.getItem('telefono')
   }
 }
